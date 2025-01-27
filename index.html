@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Load an icon to show hamburger menu on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="navBar">
+        <table style="width: 100%">
+            <tr>
+                <td>
+
+                    <img src="assets/icons/developer.png" width="80px" alt=""
+                        style="position: relative; top: 20px; left: 20px;" />
+
+                </td>
+
+                <td align="right">
+                    <nav style="position: relative;right: 50px;">
+                        <div class="topnav">
+                            <div id="myTopnav">
+                                <a href="#home">Home</a>
+                                <a href="#about" style="margin: 10px">About</a>
+                                <a href="#skills" style="margin: 10px">Skills</a>
+                                <a href="#certificate" style="margin: 10px">Certificate</a>
+                                <a href="#projects" style="margin: 10px">Projects</a>
+                                <a href="#contact">Contact</a>
+                            </div>
+                            <a href="javaScript:void(0);" class="icon" onclick="menu()"
+                                style="position: relative;right: 1px;left: 10px;">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                    </nav>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <button onclick="backTop()" id="myBtn"></button>
+    <section id="home">
+        <div class="homeContainer">
+            <div>
+                <h3>Hello👋 my name is </h3>
+                <h1>Promise Tshegofatso Magoga</h1>
+                <h2>I'm a <span>Web developer</span></h2>
+                <p>I am a young, energetic, optimistic, and hardworking web developer with extensive experience in building user-friendly
+                     web applications using HTML5, CSS3, JavaScript, React.js, Bootstrap, Material UI. I am also proficient in other 
+                     technologies and tools such as Figma, Webflow, and Firebase, etc. As an open-minded individual, I enjoy solving 
+                     problems through technology. I am an active learner, and my educational hobby includes being a part-time reader for 
+                     Fundza. In 2022, I was honored to be announced as the winner of the Fundza Cover Letter competition.</p>
+                <div class="homeButtons">
+                    <a href="assets/files/Promise-Magoga-WebDev.pdf" download=""> <button class="download">Download
+                            Resume</button></a>
+                    <a href="#contact"> <button class="call">Hire Me</button></a>
+                </div>
+            </div>
+            <img src="assets/images/female programmer.jpg" alt="">
+        </div>
+    </section>
+    <section id="about">
+        <div class="aboutContainer">
+            <img src="assets/images/IMG_20220704_123351_340.webp" alt="" style="border-radius: 100%;">
+            <div>
+                <h1><span>About</span> Me</h1>
+                <h3>Get to know a little more about me</h3>
+                <div class="aboutParagraph">
+                    <p>As a versatile and dynamic professional, I am an experienced web developer, software developer, 
+                        and frontend developer with a passion for creating innovative and user-friendly digital 
+                        solutions. With a keen eye for detail and a deep understanding of programming languages and 
+                        development frameworks, I have a proven track record of delivering high-quality, responsive, 
+                        and visually appealing websites and applications. My expertise in front-end technologies, 
+                        coupled with a strong foundation in software development, allows me to seamlessly integrate 
+                        design and functionality, resulting in a seamless user experience. With a commitment to staying 
+                        abreast of the latest industry trends and best practices, I strive to consistently push the 
+                        boundaries of what is possible in the digital realm.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h1>My <span>Skills</span></h1>
+        <h2>A table of my core skills and tools</h2>
+        <div class="row">
+            <div>
+                <img src="assets/icons/html-5.png" alt="" width="150px" height="150px">
+                <h1>Html5</h1>
+            </div>
+            <div>
+                <img src="assets/icons/css.png" alt="" width="150px" height="150px">
+                <h1>Css3</h1>
+            </div>
+            <div>
+                <img src="assets/icons/js.png" alt="" width="150px" height="150px">
+                <h1>javaScript</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <img src="assets/icons/database-storage.png" alt="" width="150px" height="150px">
+                <h1>mongodb</h1>
+            </div>
+            <div>
+                <img src="assets/icons/code.png" alt="" width="150px" height="150px">
+                <h1>Nodejs</h1>
+            </div>
+            <div>
+                <img src="assets/icons/database-storage.png" alt="" width="150px" height="150px">
+                <h1>Firebase</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <img src="assets/icons/figma.png" alt="" width="150px" height="150px">
+                <h1>Figma</h1>
+            </div>
+            <div>
+                <img src="assets/icons/browser.png" alt="" width="150px" height="150px">
+                <h1>Rest APIs</h1>
+            </div>
+            <div>
+                <img src="assets/icons/atom.png" alt="" width="150px" height="150px">
+                <h1>React</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <img src="assets/icons/atom.png" alt="" width="150px" height="150px">
+                <h1>React Native</h1>
+            </div>
+            <div>
+                <img src="assets/icons/github.png" alt="" width="150px" height="150px">
+                <h1>Github</h1>
+            </div>
+            <div>
+                <img src="assets/icons/8695385.png" alt="" width="150px" height="150px">
+                <h1>Git</h1>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h1>My <span class="work">Work</span></h1>
+        <h2>Have a look at my work</h2>
+        <div class="projectsRow">
+            <div class="projectCard">
+                <img src="assets/images/Ezamazwe.PNG" alt="" width="100%" height="300px">
+                <div class="projectsInfo">
+                    <h1>Ezamazwe EduTech</h1>
+                    <p>My team and I built a learning management system like udemy, but its focus was delivering content 
+                        on CAPS, IEB, and entrepreneurial skills. This was part of our final project as CodeTribers.
+                        Technologies used:<span style="color: aqua;">React, Material UI, Nde.js, Firebase</span>.
+                    </p>
+                    <div class="projectsButtons">
+                        <a href="#"><img src="assets/icons/github.png" alt="" width="35px" height="35px"></a>
+                        <a href="https://edutech-app-eecfd.web.app/"><img src="assets/icons/10080226.png" alt=""
+                                width="35px" height="35px" style="border-radius: 100px;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="projectCard">
+                <img src="assets/images/hotel.png" alt="" width="100%" height="300px">
+                <div class="projectsInfo">
+                    <h1>Hotel Management App</h1>
+                    <p>
+                        Have a home away from home, with our luxury rooms and get to relax a bit. Because firebase has 
+                        it's own limitation and am avoiding to exceed the quota and also find my website messed up , 
+                        i won't provide the admin credentials. If you want to explore the client side, please register 
+                        with dummy data.Technologies
+                        used:<span style="color: aqua;">React</span>,<span style="color: aqua;">BootStrap</span>,<span
+                            style="color: aqua;">Material UI</span>,<span style="color: aqua;">Firebase</span>.
+                    </p>
+                    <div class="projectsButtons">
+                        <a href="https://github.com/Promisemagoga/Hotel-Management-App"><img
+                                src="assets/icons/github.png" alt="" width="35px" height="35px"></a>
+                        <a href="https://hotel-lime.vercel.app/"><img
+                                src="assets/icons/10080226.png" alt="" width="35px" height="35px"
+                                style="border-radius: 100px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projectsRow">
+            <div class="projectCard">
+                <img src="assets/images/diamondShot.PNG" width="100%" height="300px">
+                <div class="projectsInfo">
+                    <h1>Miss Diamonds Treats</h1>
+                    <p>
+                        Are you around Pretoria? Book yourself and your loved ones a taste of relaxation at MS Diamonds Treat, a spa business located in Ga-Rankua.Technologies
+                        used:<span style="color: aqua;">Html</span>,<span style="color: aqua;">Css</span>,
+                        <span style="color: aqua;">javaScript</span>.
+                    </p>
+                    <div class="projectsButtons">
+                        <a href="https://github.com/Promisemagoga/MS-Diamonds-Treats"><img src="assets/icons/github.png"
+                                alt="" width="35px" height="35px"></a>
+                        <a href="https://ms-diamonds-treats.vercel.app/"><img src="assets/icons/10080226.png" alt=""
+                                width="35px" height="35px" style="border-radius: 100px;"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="projectCard">
+                <img src="assets/images//DFA.png" width="100%" height="300px">
+                <div class="projectsInfo">
+                    <h1>Digital-Financial-Advisor (DFA)</h1>
+                    <p>
+                       It is a platform that helps you manage your money better. It has tools like dashboard, saving plans and credit score.Technologies
+                        used:<span style="color: aqua;">React</span>,<span style="color: aqua;">Material UI</span>,<span
+                            style="color: aqua;">localStrage</span>.
+                    </p>
+                    <div class="projectsButtons">
+                        <a href="https://github.com/Promisemagoga/Expense-Tracker"><img
+                                src="assets/icons/github.png" alt="" width="35px" height="35px"></a>
+                        <a href="https://expense-tracker-zeta-kohl.vercel.app/"><img
+                                src="assets/icons/10080226.png" alt="" width="35px" height="35px"
+                                style="border-radius: 100px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projectsRow">
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="contactContainer">
+            <h2><span>Contact</span> Me</h2>
+            <h3>Connect With Me On Social Media</h3>
+            <h1>Find Me On Social Media</h1>
+        </div>
+        <hr>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/promise-tshegofatso"><img src="assets/icons/linkedinicon.png" alt=""
+                    width="50px" height="50px"></a>
+            <a href="https://twitter.com/PromiseTshegof1/"><img src="assets/icons/twitwer-icon.png" alt="" width="50px"
+                    height="50px"></a>
+            <a href="https://www.github.com/Promisemagoga/"><img src="assets/icons/github.png" alt="" width="50px"
+                    height="50px"></a>
+        </div>
+        <form action="https://formspree.io/f/mknazdly" method="post">
+            <input type="text" placeholder="Your Name" name="name" id="name">
+            <input type="email" placeholder="Email" name="email" id="email">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <button>Contact</button>
+        </form>
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
